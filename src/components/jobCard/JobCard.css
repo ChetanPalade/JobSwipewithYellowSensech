@@ -1,0 +1,26 @@
+.job-card {
+  background-color: #c58b8b;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(194, 13, 185, 0.1);
+  margin: 15px 0;
+  padding: 20px;
+  transition: transform 0.5s;
+}
+
+.job-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.job-card p {
+  color: #0a0a0a;
+}
+
+@media (max-width: 600px) {
+  .job-card {
+    padding: 15px;
+  }
+  .job-card h3 {
+    font-size: 1rem;
+  }
+}
