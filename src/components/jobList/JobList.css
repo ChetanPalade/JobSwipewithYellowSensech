@@ -13,7 +13,7 @@
   margin-top: 20px;
   text-decoration: underline;
   cursor: pointer;
-
+  
 }
 
 .jobList:hover {
@@ -56,7 +56,7 @@
 }
 
 .Trash-job:hover{
-
+  
   transform: scale1(1.02);
 }
 
@@ -120,7 +120,7 @@
 }
 
 
-
+  
 @media (max-width: 600px) {
   .job-card {
     width: 100%;
