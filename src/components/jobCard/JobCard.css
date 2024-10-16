@@ -1,26 +1,58 @@
+
 .job-card {
-  background-color: #c58b8b;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(194, 13, 185, 0.1);
-  margin: 15px 0;
+  border: 1px solid #ccc;
   padding: 20px;
-  transition: transform 0.5s;
+  margin: 20px;
+  background-color: #f9f9f9;
+  transition: transform 10s ease, opacity 10s ease;
+  position: relative;
+  width: 300px;
+  cursor: pointer;
+  display: inline-block;
 }
 
-.job-card h3 {
-  font-size: 1.2rem;
-  margin: 0;
+/* Swipe left animation */
+.job-card.left {
+  transform: translateX(-100%) rotate(-10deg); /* Slide to left */
+  opacity: 0;
 }
 
-.job-card p {
-  color: #0a0a0a;
+/* Swipe right animation */
+.job-card.right {
+  transform: translateX(100%) rotate(10deg);  /* Slide to right */
+  opacity: 10;
 }
 
-@media (max-width: 600px) {
-  .job-card {
-    padding: 15px;
-  }
-  .job-card h3 {
-    font-size: 1rem;
-  }
+/* Add a class for swiping in progress */
+.job-card.swiping {
+  transition: transform 0.1s ease;
+}
+
+/* To add swipe indication, we can change the background color based on swipe */
+.job-card.left.swiping {
+  background-color: #ffdddd; /* Light red for left swipe */
+}
+
+.job-card.right.swiping {
+  background-color: #ddffdd; /* Light green for right swipe */
+}
+.job-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Animate transform and background */
+  will-change: transform; /* Performance optimization for animations */
+}
+
+.job-card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.job-card.swipe-left {
+  background-color: #6d2626; 
+}
+
+.job-card.swipe-right {
+  background-color: #ddffdd; 
 }
