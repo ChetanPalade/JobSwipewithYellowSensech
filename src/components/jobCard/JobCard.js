@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import './JobCard.css';
@@ -41,6 +40,7 @@ const JobCard = ({ job, onBookmark, onDismiss }) => {
 };
 
 export default JobCard;
+
 // import React from 'react'
 // import {useSwipeable} from 'react-swipeable';
 // import './JobCard.css'
@@ -64,3 +64,4 @@ export default JobCard;
 // }
 
 // export default JobCard
+
