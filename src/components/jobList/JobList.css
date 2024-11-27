@@ -1,6 +1,7 @@
 .job-list-container {
   padding: 20px;
   display: flex;
+  background-color: #0000FF;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
