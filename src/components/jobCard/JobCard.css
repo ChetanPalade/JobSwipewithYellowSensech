@@ -3,7 +3,7 @@
   border: 1px solid #ccc;
   padding: 20px;
   margin: 20px;
-  background-color: green;
+  background-color: #0000FF;
   transition: transform 10s ease, opacity 10s ease;
   position: relative;
   width: 300px;
