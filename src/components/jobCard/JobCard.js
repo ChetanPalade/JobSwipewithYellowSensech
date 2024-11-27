@@ -9,14 +9,14 @@ const JobCard = ({ job, onBookmark, onDismiss }) => {
     onSwipedLeft: () => {
       setSwipeStyle({ transform: 'translateX(-100%)', transition: 'transform 0.5s ease' });
       setTimeout(() => {
-        onDismiss(job); // Call dismiss after animation
+        onBookmark(job); // Call dismiss after animation
         setSwipeStyle({}); // Reset swipe style after
       }, 500);
     },
     onSwipedRight: () => {
       setSwipeStyle({ transform: 'translateX(100%)', transition: 'transform 0.5s ease' });
       setTimeout(() => {
-        onBookmark(job); // Call bookmark after animation
+        onDismiss(job); // Call bookmark after animation
         setSwipeStyle({}); // Reset swipe style after
       }, 500);
     },
